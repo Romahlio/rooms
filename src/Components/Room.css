@@ -1,0 +1,58 @@
+.room {
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  font-size: 4em;
+  border: 1px solid blue;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.wall {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: rgba(100,100,100,0.5);
+  border: 1px solid red;
+  transform-style: preserve-3d;
+  margin:auto
+}
+
+.back {
+  transform: translateZ(-4000px);
+  width: 100vw;
+  height: 100vh;
+}
+
+.left, .right {
+  width: 4000px;
+  height: 100vh;
+}
+
+.left {
+  transform: rotateY(90deg);
+  transform-origin: 0 50%;
+}
+
+.right {
+  transform: rotateY(-90deg);
+  transform-origin: 100% 50%;
+  right: 0;
+}
+
+.top, .bottom {
+  height: 4000px;
+  width: 100vw;
+  transform: rotateX(90deg) translateY(-4000px);
+  transform-origin: 50% 0%;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  top: 100%;
+}

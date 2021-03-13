@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  perspective: 3000px;
+}
+
+.scroller {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out 0s;
+}
+  
